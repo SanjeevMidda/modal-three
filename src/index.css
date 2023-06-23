@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  transition: all 1.2s;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.modal {
+  transform: scale(0);
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.noModal {
+  transform: scale(3) rotate(360deg);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.38);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.show {
+  opacity: 1;
+}
+
+.noShow {
+  opacity: 0;
+}
